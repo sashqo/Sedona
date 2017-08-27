@@ -5,7 +5,11 @@
 	font-size: 14px;
 	line-height: 21px;
 }
-
+.clearfix{
+	content: "";
+	display: table;
+	
+}
 
 .visually-hidden{
 	display: none;
@@ -140,11 +144,12 @@ clip-path: polygon(50% 95%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 	font-weight: 	400;
 	text-align: 	center;	
 	margin: 	auto;	
-	max-width: 	300px;
+	max-width: 	280px;
 	display: 	block;	
-	padding-top: 40px;
+	padding-top: 30px;
 	line-height: 	26px;	
 }
+
 .feuchers-item__header {
 	text-transform: uppercase;
 	text-align: 	center;	
@@ -186,15 +191,102 @@ clip-path: polygon(50% 95%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 	text-transform: uppercase;	
 	padding-top: 25px;
 	padding-bottom: 45px;
+
 }
 .feuchers-item__img{
 	height: 260px;
 	width: 100%;
     background: url("img/photo-city-mob.png") no-repeat center;
     background-size: cover;
-
 }
 .cover--blue{
 	background-color: #81b3d2;
 	top:-39px;
+}
+.benefits{
+	padding-top: 30px;
+	width: 270px;
+margin: 0 auto;
+	text-transform: uppercase;
+	
+}
+.benefits__header{
+	font-size: 18px;
+	display: block;
+}
+.benefits__icon{
+position: absolute;
+left: -35px;
+top: -10px;
+	
+}
+.benefits_textblock {
+     width: 210px;
+     position: relative;     
+     padding-left: 15px;
+     margin: 0 0 0 45px;
+}
+.benefits__description{
+	margin-bottom: 0;
+}
+
+.feuchers-item_img--devil-bridge{
+ background: url("img/photo-bridge.png") no-repeat center;
+ height: 260px;
+width: 100%;
+background-size: cover;
+}
+.feuchers-item--gray{
+	background-color: #eeeeee;
+	border-bottom: 1px solid #d6d6d6;
+	width: 80%;
+	margin: 0 auto;
+	
+}
+.feuchers-item--gray:last-child{
+	border-bottom: none;
+}
+.feuchers-item__wrapper{
+	background-color: #eeeeee;
+}
+
+.feuchers-item__number--gray:before {
+    background: #000000;
+}    
+.feuchers-item__number--gray span {
+    background: #eeeeee;
+    position: relative;
+    padding: 0 5px;
+}
+.find-button{
+	background-color: #81b3d2;
+	color: white;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	border:none;
+	outline: none;
+	width: 270px;
+	margin: 0 auto;
+	display: block;
+	padding: 15px 0;
+	cursor: pointer;
+}
+.map{
+	padding-top: 38px; 
+}
+.map__content{
+	display: block;
+	height: 350px;
+	width: 100%;
+	padding-top: 45px;
+}
+.hash-tag-item{
+	text-transform: uppercase;
+	font-size: 21px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
 }
