@@ -290,3 +290,65 @@ background-size: cover;
 	text-align: center;
 	padding-top: 40px;
 }
+.social-links{
+    font-size: 0;
+	margin-top: 40px;
+	margin-left: auto; 
+	margin-right: auto; 
+	width: 162px;
+
+}
+
+.social-link{
+	vertical-align: top;
+	display: inline-flex;
+	width: 50px;
+	height: 50px;
+	margin: 0 6px 0 0 ;
+	background: #81b3d2;
+	font-size: 0;
+	text-decoration: none;
+	position: relative;
+}
+.social-link:last-child{
+	margin-right: 0px;
+}
+.social-icon{
+	background: url(img/sprite.png) no-repeat;
+	display: block;
+	margin: auto;
+}
+.social-icon--twitter{	
+	background-position: -20px 0px;
+ 	width: 18px;
+ 	height: 14px;
+   
+}
+.social-icon--fb{
+	background-position: 0px -14px;
+    width: 9px;
+ 	height: 18px; 
+}
+.social-icon--youtube{
+	background-position: 0px 0px;
+  	width: 20px;
+  	height: 14px;
+}
+.page-footer__copyright{
+	font-size: 14px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 45px; 
+	margin-bottom: 30px; 
+}
+.page-footer__copyright-link{
+	background: url(img/htmlacademy.svg) no-repeat;
+	width: 27px;
+	height: 34px;
+	font-size: 0;
+	text-decoration: none;
+	position: relative;
+	display: inline-flex;
+	vertical-align: middle;
+	margin-left: 10px; 
+}
