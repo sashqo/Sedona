@@ -5,6 +5,7 @@
 	font-size: 14px;
 	line-height: 21px;
 }
+
 .clearfix{
 	content: "";
 	display: table;
@@ -26,7 +27,23 @@
 	background-color: #81b3d2;
 	line-height: 55px;
 	position: relative;
+}
+@media (min-width: 768px) {
+	.main-nav{
+	width: 90%;
+	margin: 0 auto;
 
+	}
+    .main-nav__list {
+    	width: 90%;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+     	z-index: 20;
+       	position: absolute;    
+       	font-size: 14px;  	
+
+       }
 }
 .main-nav__item {
 	height: 55px;
@@ -35,17 +52,48 @@
 -moz-box-shadow:    inset 0px 1px 0px 1px #9ac2db;
 box-shadow:  inset 0px 1px 0px 1px #9ac2db;
 }
+@media (min-width: 768px) {
+    .main-nav__item {
+    	border:none;
+    	box-shadow: none;
+         }
+        
+.main-nav__item:nth-child(3){
+	margin-left: auto;
+}
+.main-nav__button--close-menu{
+	display: none;
+}
+.main-nav__button--open-menu{
+	display: none;
+}
+
+}
+
 .main-nav__item:first-child {
 	border-top: none;
 	box-shadow: none;
 }
-.main-nav__list a{
+.main-nav__link{
 	text-decoration: none;
 	color: #ffffff;
 	 display: block; /* Ссылка как блочный элемент */
      height: 100%;    
      vertical-align: middle;       
 }
+@media (min-width: 768px) {
+	.main-nav__link {
+		color:#000000;
+		
+	}
+	.main-nav__item{
+		padding-right: 77px;
+	}
+	.main-nav__item:nth-child(4){
+		padding-right: 0px;
+	}
+}
+
 .main-nav__button--close-menu {
 	position: absolute;
 	top: 14px;
@@ -88,9 +136,12 @@ box-shadow:  inset 0px 1px 0px 1px #9ac2db;
 .main-nav--closed{
 	position: relative;
 	height: 55px;
-	-webkit-box-shadow:  0px -2px 5px 0px rgba(50, 50, 50, 0.67);
--moz-box-shadow:     0px -2px 5px 0px rgba(50, 50, 50, 0.67);
 box-shadow:          0px -2px 5px 0px rgba(50, 50, 50, 0.67);
+}
+@media (min-width: 768px) {
+    .main-nav--closed {
+    	box-shadow : none;
+}
 }
 .main-nav__button--open-menu{
 	right: 20px;
@@ -139,6 +190,14 @@ clip-path: polygon(50% 95%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 	text-align: center;
 	margin: auto;
 }
+@media (min-width: 768px) {
+	.main-content__header{
+		max-width: 500px;
+	}
+	.main-content__description{
+		max-width: 500px;
+	}
+}
 .main-content__description{
 	text-transform: uppercase;	
 	font-weight: 	400;
@@ -148,6 +207,11 @@ clip-path: polygon(50% 95%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 	display: 	block;	
 	padding-top: 30px;
 	line-height: 	26px;	
+}
+@media (min-width: 768px) {
+.main-content__description{
+		max-width: 500px;
+	}
 }
 
 .feuchers-item__header {
@@ -203,6 +267,22 @@ clip-path: polygon(50% 95%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 	background-color: #81b3d2;
 	top:-39px;
 }
+
+@media (min-width: 768px) {
+	.cover--blue{
+		display: none;
+	}
+	.feauchers-item{
+		display: flex;
+		margin-top: 50px;
+	}
+	.feuchers-item__main{
+		display: flex;
+		flex-direction:column;
+		min-width: 33%;
+		margin-top: 0; 
+}
+}
 .benefits{
 	padding-top: 30px;
 	width: 270px;
@@ -229,12 +309,17 @@ top: -10px;
 .benefits__description{
 	margin-bottom: 0;
 }
-
+@media (min-width: 768px) {
+	.benefits{
+		display: flex;
+		min-width: 768px;
+	}
+}
 .feuchers-item_img--devil-bridge{
- background: url("img/photo-bridge.png") no-repeat center;
  height: 260px;
-width: 100%;
-background-size: cover;
+	width: 100%;
+    background: url("img/photo-bridge.png") no-repeat center;
+    background-size: cover;
 }
 .feuchers-item--gray{
 	background-color: #eeeeee;
