@@ -217,15 +217,19 @@ clip-path: polygon(50% 95%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 .feuchers-item__header {
 	text-transform: uppercase;
 	text-align: 	center;	
-	margin: 	auto;	
+	margin:  auto;	
 	max-width: 	300px;
-	padding-top: 40px; 
+	padding-top: 40px;
+
+
 }
 .feuchers-item__main{
 	color: white;
 	position: relative;
 	background-color: #81b3d2;
 	margin-top: 40px; 
+
+
 }
 .feuchers-item__number{
 	text-align: 	center;	
@@ -275,18 +279,27 @@ clip-path: polygon(50% 95%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 	.feauchers-item{
 		display: flex;
 		margin-top: 50px;
+	
 	}
 	.feuchers-item__main{
-		display: flex;
-		flex-direction:column;
+		
 		min-width: 33%;
 		margin-top: 0; 
 }
+ .feuchers-item__header{
+ 	padding-top: 60px;
+ }
+ .feuchers-item__description{
+ 	max-width: 170px;
+ }
+ .feuchers-item__main--reverse{
+ 	flex-direction: row-reverse;
+ }
 }
 .benefits{
 	padding-top: 30px;
 	width: 270px;
-margin: 0 auto;
+	margin: 0 auto;
 	text-transform: uppercase;
 	
 }
