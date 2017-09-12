@@ -303,6 +303,7 @@ clip-path: polygon(50% 95%, 100% 0%, 100% 100%, 0 100%, 0 0%);
 	text-transform: uppercase;
 	
 }
+
 .benefits__header{
 	font-size: 18px;
 	display: block;
@@ -325,7 +326,33 @@ top: -10px;
 @media (min-width: 768px) {
 	.benefits{
 		display: flex;
-		min-width: 768px;
+		min-width: 100%;
+	
+		text-align: center;
+	}
+	.benefits_textblock{
+		display: flex;
+		flex-flow: column;
+		padding-left: 0px;
+		width: 100%;
+		margin: 0;
+		 justify-content: center;
+	}
+	.benefits__icon{
+		position: relative;
+		margin: auto;
+		left: 0;
+        top:0;
+        width: 84px;
+        height: 84px;
+}
+	.benefits__description{
+	    display: flex;
+    max-width: 170px;
+    margin: auto;
+	}
+	.benefits_textblock--eating{
+		order: 2;
 	}
 }
 .feuchers-item_img--devil-bridge{
@@ -356,6 +383,15 @@ top: -10px;
     position: relative;
     padding: 0 5px;
 }
+@media (min-width: 768px){
+	.feuchers-item__wrapper{
+		display: flex;
+	}
+	.feuchers-item--gray{
+		border-bottom: none;
+}
+
+}
 .find-button{
 	background-color: #81b3d2;
 	color: white;
@@ -380,6 +416,7 @@ top: -10px;
 	width: 100%;
 	padding-top: 45px;
 }
+
 .hash-tag-item{
 	text-transform: uppercase;
 	font-size: 21px;
@@ -388,6 +425,7 @@ top: -10px;
 	text-align: center;
 	padding-top: 40px;
 }
+
 .social-links{
     font-size: 0;
 	margin-top: 40px;
@@ -449,4 +487,18 @@ top: -10px;
 	display: inline-flex;
 	vertical-align: middle;
 	margin-left: 10px; 
+}
+@media (min-width: 768px){
+	.main-footer{
+		display: flex;
+		margin-left: 60px;
+		margin-right: 60px;
+		align-items: baseline;
+	}
+	.hash-tag-item{
+		margin: 0;
+	}
+	.social-links{
+		margin-bottom: 60px; 
+	}
 }
