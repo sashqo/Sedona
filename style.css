@@ -351,8 +351,14 @@ top: -10px;
     max-width: 170px;
     margin: auto;
 	}
+	.benefits_textblock--house{
+		order:1;
+	}
 	.benefits_textblock--eating{
 		order: 2;
+	}
+	.benefits_textblock--souvenier{
+		order: 3;
 	}
 }
 .feuchers-item_img--devil-bridge{
@@ -432,7 +438,6 @@ top: -10px;
 	margin-left: auto; 
 	margin-right: auto; 
 	width: 162px;
-
 }
 
 .social-link{
@@ -476,6 +481,7 @@ top: -10px;
 	text-align: center;
 	margin-top: 45px; 
 	margin-bottom: 30px; 
+	display: block;
 }
 .page-footer__copyright-link{
 	background: url(img/htmlacademy.svg) no-repeat;
@@ -493,12 +499,22 @@ top: -10px;
 		display: flex;
 		margin-left: 60px;
 		margin-right: 60px;
-		align-items: baseline;
+		min-height: 120px;
+		
 	}
 	.hash-tag-item{
 		margin: 0;
+		align-self:center;
+		padding-top: 0; 
 	}
 	.social-links{
-		margin-bottom: 60px; 
+		align-self:center;
+		margin: 0 auto; 
+	}
+	.page-footer__copyright{
+margin: 0;
+		align-self:center;
+		padding-top: 0; 
+
 	}
 }
